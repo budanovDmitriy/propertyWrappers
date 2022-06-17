@@ -19,7 +19,7 @@ struct Uppercased {
         set {
             value =  newValue.components(separatedBy: ".")
                 .map { element in
-                    element.uppercased()
+                    element.capitalized
                 }
                 .joined(separator: ".")
                 
